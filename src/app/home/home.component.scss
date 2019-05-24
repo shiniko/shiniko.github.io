@@ -1,6 +1,6 @@
 img{
-    margin: left;
-    padding: 50px;
+    padding-top: 200px;
+    float: left;
 }
 
 .rotateimg90 {
@@ -9,4 +9,10 @@ img{
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
-  }
+}
+
+.info {
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+}
