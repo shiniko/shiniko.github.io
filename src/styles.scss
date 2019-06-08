@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap');
 
 body, html {
     height: 100%;
@@ -7,8 +7,8 @@ body, html {
 }
 
 body {
-    font-family: 'Montserrat';
-    font-size: 18px;
+    font-family: 'Noto Serif JP';
+    //font-size: 18px;
 }
 
 a {
@@ -18,7 +18,7 @@ a {
 .container {
     width: 80%;
     margin: 0 auto;
-    padding: 1.3em;
+    padding: .5em;
     display: grid;
     grid-template-columns: 30% auto;
 

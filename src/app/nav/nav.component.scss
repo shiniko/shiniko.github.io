@@ -2,7 +2,7 @@ header {
     background: #1E85FF;
 
     .logo {
-        font-weight: bold;
+        font-size: 1em;
     }
 
     nav {
@@ -17,11 +17,10 @@ header {
 
                 a {
                     padding: 1.5em;
-                    text-transform: uppercase;
-                    font-size: .8em;
+                    font-size: 1em;
 
                     &:hover {
-                        background: #1B61B4;
+                        color: rgb(2, 247, 76);
                     }
                 }
             }
