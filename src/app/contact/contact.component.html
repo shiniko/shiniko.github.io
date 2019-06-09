@@ -10,49 +10,48 @@
       Currently seeking employment in California near the Bay area.<br/>
       Feel free to leave a message below and I will try to get back to you!<br/>
     </p>
-  </body>
 
-  <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
-    <label>
-      Name:
-      <input type="text" formControlName="name">
-      <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
-        <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
-      </div>
-    </label>
-
-    <label>
-        Email:
-        <input type="text" formControlName="email">
-        <div *ngIf="submitted && messageForm.controls.email.errors" class="error">
-          <div *ngIf="messageForm.controls.email.errors.required">Your email is required</div>
+    <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+      <label>
+        Name:
+        <input type="text" formControlName="name">
+        <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
+          <div *ngIf="messageForm.controls.name.errors.required">Your name is required</div>
         </div>
       </label>
-  
-    <label>
-      Message:
-      <textarea formControlName="message"></textarea>
-      <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
-        <div *ngIf="messageForm.controls.message.errors.required">A message is required</div>
+
+      <label>
+          Email:
+          <input type="text" formControlName="email">
+          <div *ngIf="submitted && messageForm.controls.email.errors" class="error">
+            <div *ngIf="messageForm.controls.email.errors.required">Your email is required</div>
+          </div>
+        </label>
+    
+      <label>
+        Message:
+        <textarea formControlName="message"></textarea>
+        <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
+          <div *ngIf="messageForm.controls.message.errors.required">A message is required</div>
+        </div>
+      </label>
+
+      <input type="submit" value="Send message" class="cta">
+    
+    </form>
+
+    <div *ngIf="submitted" class="results">
+      <h4 *ngIf="success">Submitted Successfully<br/>Preview below:</h4>
+
+      <strong>Name:</strong> 
+      <span>{{ messageForm.controls.name.value }}</span>
+
+      <strong>Email:</strong> 
+      <span>{{ messageForm.controls.email.value }}</span>
+
+      <strong>Message:</strong> 
+      <span>{{ messageForm.controls.message.value }}</span>
+
       </div>
-    </label>
-
-    <input type="submit" value="Send message" class="cta">
-  
-  </form>
-
-  <div *ngIf="submitted" class="results">
-    <h4 *ngIf="success">Submitted Successfully<br/>Preview below:</h4>
-
-    <strong>Name:</strong> 
-    <span>{{ messageForm.controls.name.value }}</span>
-
-    <strong>Email:</strong> 
-    <span>{{ messageForm.controls.email.value }}</span>
-
-    <strong>Message:</strong> 
-    <span>{{ messageForm.controls.message.value }}</span>
-
-  </div>
-
+  </body>
 </html>

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap');
 
+// Use these across other .scss files to access var
+$mobile-width: (min-width: 480px) and (max-width: 1023px);
+$desktop-width: (min-width: 1024px);
+
 body, html {
     height: 100%;
     margin: 0 auto;
@@ -16,12 +20,12 @@ a {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: .5em;
     display: grid;
     grid-template-columns: 30% auto;
-
+    
     a {
         color: white;
     }
