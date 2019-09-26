@@ -1,13 +1,30 @@
 <!doctype html>
-<header>
-  <div class = "container">
-    <a routerLink = "/" class = "logo"> {{appTitle}} </a>
-    <nav>
-      <ul>
-        <li><a routerLink = "/"> Home </a></li>
-        <li><a routerLink = "/project"> Projects </a></li>
-        <li><a routerLink = "/contact"> Contact Me </a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+
+<!--
+    Notes:
+    "navbar-brand" will set Title to left and box toggle to right
+    when collapsed.
+    "ml-auto" for the subheaders to move to the right (opposite
+    here because it's meant for "left" technically)
+    "routerlink" to point to various pages
+-->
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Jamie Lynn Culilap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/project">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/contact">Contact Me</a>
+                </li>    
+            </ul>
+
+    </div>
+</nav>

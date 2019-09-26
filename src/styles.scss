@@ -4,29 +4,11 @@
 $mobile-width: "(min-width: 360px) and (max-width: 1023px)";
 $desktop-width: "(min-width: 1024px)";
 
-body, html {
-    height: 100%;
-    margin: 0 auto;
-    background-color:powderblue;
-}
 
-body {
+html {
     font-family: 'Noto Serif JP';
-    //font-size: 18px;
+    font-size: 18px;
 }
 
-a {
-    text-decoration: none;
-}
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    padding: .5em;
-    display: grid;
-    grid-template-columns: 30% auto;
-    
-    a {
-        color: white;
-    }
-}
+
