@@ -8,7 +8,11 @@ $desktop-width: "(min-width: 1024px)";
 html {
     font-family: 'Noto Serif JP';
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 
+body {
+    margin: 5%;
+}
 
 
