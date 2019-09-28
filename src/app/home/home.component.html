@@ -4,51 +4,103 @@
   <title>Home Page</title>
 </head>
 
-
 <div class="background">
-  <div class="text-block">
+  <div class="text-block" id="aboutMe">
     <h1>Hello, I'm<br/>Jamie Lynn Culilap</h1>
   </div>
 </div>
 
-<div class="container">
-  <h1>About Me</h1>
-  <p>
-    Hello! My name is Jamie Lynn Culilap.<br/>
-    I recently graduated from University of the Pacific with a B.S. in Computer Science 
-    and a concentration in Graphics and Simulation.<br/>
-    While I'm not coding I enjoy spending time with my pet bird, Link, playing video games 
-    with friends, and getting excited over PC parts.
-  </p>
-  <h1>My Skills</h1>
-  <p>
-    Languages: Python, Java, C++, C#, C<br/>
-    Software: Eclipse, PyCharm, Visual Studios 2015, GitHub, Bitbucket, Basecamp, Unreal Engine, 
-    Unity Engine<br/>
-    Relevant Coursework: Data Structures, Application Development, Design and Analysis of Algorithms, 
-    Digital Design, Programming Languages, Computer System and Networks, Human-Computer Interface Design, 
-    AI, Operating Systems<br/>
-  </p>
-  <h1>Work Experience</h1>
-  <p>
-    Software Developer<br/>
-    August 2018 - May 2019 <br/>
-    University of the Pacific Library<br/>
-    ▪ Helped launch efforts for the Innovative Project Studio (IP Studio) at the University Library<br/>
-    ▪ Expanded on the Little Manila Recreated project towards classroom curriculum<br/>
-    ▪ Fabricated a cost-effective interactive medium for users to learn about history through a hologram <br/> 
-    <br/>
-    Product Marketing Engineer Intern<br/>			       
-    Spring & Summer 2018<br/>
-    Intel Corporation – Folsom, California<br/>
-    ▪ Maintained multiple technical documents, slide decks, and collaterals<br/>
-    ▪ Created scripts and used internal benchmarking tools to test various workloads for SSDs<br/>
-    ▪ Built Excel tools to help aid in the marketing team<br/>
-    ▪ Collaborated in a team of three, as the sole front-end developer for a new internal python tool<br/>
+<!--
+    Notes:
+    Bootstrap organizes by container->row->col
+    Up to 12 columns
+-->
+<body>
+  <div class="container">
+    <div class="row margin-bot">
+      <div class="col-sm-3">
+        <h1>About Me</h1>
+      </div>
+      <div class="col-sm">
+        <p>
+          Hello! My name is Jamie Lynn Culilap.<br/>
+          I recently graduated from University of the Pacific with a B.S. in Computer Science 
+          and a concentration in Graphics and Simulation.<br/>
+          While I'm not coding I enjoy spending time with my pet bird, Link, playing video games 
+          with friends, and getting excited over PC parts.
+        </p>
+      </div>
+    </div>
 
-  </p>
-  <h3><a href="assets/pdfs/resume.pdf">My Resume</a></h3>
-</div>
+    <div class="row margin-bot">
+      <div class="col-sm-3">
+        <h1>My Skills</h1>
+      </div>
+      <div class="col-sm">
+        <p>
+          Languages: Python, Java, C++, C#, C<br/>
+          Software: Eclipse, PyCharm, Visual Studios 2015, GitHub, Bitbucket, Basecamp, Unreal Engine, 
+          Unity Engine<br/>
+          Relevant Coursework: Data Structures, Application Development, Design and Analysis of Algorithms, 
+          Digital Design, Programming Languages, Computer System and Networks, Human-Computer Interface Design, 
+          AI, Operating Systems<br/>
+        </p>
+      </div>
+    </div>
 
+    <div class="row margin-bot">
+        <div class="col-sm-3">
+          <h1>Work Experience</h1>
+        </div>
+        <div class="col-sm">
+          <p>
+              Software Developer<br/>
+              August 2018 - May 2019 <br/>
+              University of the Pacific Library<br/>
+              ▪ Helped launch efforts for the Innovative Project Studio (IP Studio) at the University Library<br/>
+              ▪ Expanded on the Little Manila Recreated project towards classroom curriculum<br/>
+              ▪ Fabricated a cost-effective interactive medium for users to learn about history through a hologram <br/> 
+              <br/>
+              Product Marketing Engineer Intern<br/>			       
+              Spring & Summer 2018<br/>
+              Intel Corporation – Folsom, California<br/>
+              ▪ Maintained multiple technical documents, slide decks, and collaterals<br/>
+              ▪ Created scripts and used internal benchmarking tools to test various workloads for SSDs<br/>
+              ▪ Built Excel tools to help aid in the marketing team<br/>
+              ▪ Collaborated in a team of three, as the sole front-end developer for a new internal python tool<br/>
+          </p>
+        </div>
+      </div>
+
+    <div class="row margin-bot" id="resume">
+      <div class="col center-text">
+        <h3><a href="assets/pdfs/resume.pdf" target="_blank">My Resume</a></h3>
+      </div>
+    </div>
+
+    <div class="row" id="contact">
+      <div class="col center-text">
+        <h1>Contact Me</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col center-text">
+        <a href="https://github.com/shiniko/Portfolio" target="_blank">
+          <img src="../../assets/img/github_dark_120px.png" class="img-fluid" alt="GitHub">
+        </a>
+      </div>
+      <div class="col center-text">
+        <a href="https://www.linkedin.com/in/jamielynnculilap/" class="img-fluid" target="_blank">
+          <img src="../../assets/img/LinkedIn.png" alt="LinkedIn">
+        </a>
+      </div>
+      <div class="col center-text">
+        <a href="mailto:jamculilap@gmail.com" class="img-fluid" target="_blank">
+          <img src="../../assets/img/gmail.png" alt="gmail">
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
 
