@@ -6,7 +6,7 @@ img {
 }
 
 .margin-bot{
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .center-text{
@@ -26,8 +26,9 @@ img {
 
     @media #{$mobile-width}{
         background-position: center;
+        border-width: 100%;
         font-size: .95em;
-        left: 2%;
+        left: 0%;
         bottom: 2%;
     }
 }

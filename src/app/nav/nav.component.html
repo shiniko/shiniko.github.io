@@ -7,6 +7,7 @@
     "ml-auto" for the subheaders to move to the right (opposite
     here because it's meant for "left" technically)
     "routerlink" to point to various pages
+      - If new page needed use "routerlink="/nameOfComponent" to switch pages within <a><a/>
     "href" points to specific parts on page to scroll through
 -->
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-primary">
@@ -20,7 +21,7 @@
           <a class="nav-link" href="#aboutMe">About</a>
         </li>
         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <a class="nav-link" routerLink="/project">Projects</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
           <a class="nav-link" href="#contact">Contact Me</a>
