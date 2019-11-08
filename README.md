@@ -1,4 +1,4 @@
-# PersWeb
+# Personal Website
 Link to [github pages](https://shiniko.github.io/Portfolio/)
 
 
