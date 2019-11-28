@@ -1,8 +1,17 @@
 @import "../../styles.scss";
 
-img {
+.img-icon {
     max-width: 3em;
     height: auto;
+}
+
+.img-link {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 80%;
+    height: auto;
+    width: 70%;
 }
 
 .margin-bot{
