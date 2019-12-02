@@ -1,5 +1,5 @@
 # Personal Website
-Link to [github pages](https://shiniko.github.io/Portfolio/)
+Link to [website](https://shiniko.github.io/Portfolio/)
 
 
 Reference to how to [deploy](https://angular.io/guide/deployment#deploy-to-github-pages)
